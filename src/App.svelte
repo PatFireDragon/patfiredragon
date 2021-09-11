@@ -37,7 +37,7 @@
     <input type="submit" on:click={handleAdd} value="Add"/>
     
 
-    {#each items as item, i (i)}
+    {#each items as item, i (item.link)}
         <Item item={item} onClick={(e) => handleRemove(e, i)}/>
     {/each}
 </div>
