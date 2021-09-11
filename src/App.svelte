@@ -26,6 +26,7 @@
 
     function handleAdd(e) {
         items = [...items, {name, link}]
+
     };
     
 </script>
