@@ -1,6 +1,6 @@
 <script>
 
-    import {onMount, beforeUpdate} from 'svelte';
+    import {beforeUpdate} from 'svelte';
     import Item from './Item';
 
     let items = [];
@@ -37,7 +37,7 @@
     <input type="submit" on:click={handleAdd} value="Add"/>
     
 
-    {#each items as item, i (item.link)}
+    {#each items as item, i (item)}
         <Item item={item} onClick={(e) => handleRemove(e, i)}/>
     {/each}
 </div>
